@@ -19,6 +19,10 @@ div {
     background-image: url(images/people-2563341_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    /*
+    You can use numbers or predefined values like center, left, right
+    */
+    /* background-position: right center; */
     background-position: 70% 30%;
 }
 
@@ -26,6 +30,7 @@ div h1 {
     padding: 2rem;
     font-size: 4rem;
     color: #d7ffff;
+    /* Adding text shadow for better readability */
     text-shadow: 3px 2px 7px rgb(0 0 0 / 45%);
 }
 

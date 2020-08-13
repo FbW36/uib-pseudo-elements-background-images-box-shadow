@@ -25,6 +25,9 @@ body {
 /* Variation stack */
 .card-var-stack {
     width: 200px;
+    /* 
+    You can add multiple shadows, you can use the text shadow tool in Chrome
+    */
     box-shadow: 10px 8px 0 0px #626060, 19px 18px 0 0px black;
     margin: 3rem auto; 
 }
