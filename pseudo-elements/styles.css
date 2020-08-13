@@ -1,0 +1,97 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mistyrose;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+section {
+    padding: 40px;
+}
+
+/* ::before, ::after */
+/* Example pseudo element with content */
+.pseudo-example h1 {
+    background-color: #f3f3f3;
+}
+
+.pseudo-example h1::before,
+.pseudo-example h1::after {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.pseudo-example h1::before {
+    /*
+    This content will appear in the beginning
+    of the headline, right BEFORE the content
+    that was added directly in the HTML
+    */
+    content: 'I am the BEFORE pseudo element ';
+}
+
+.pseudo-example h1::after {
+    /*
+    This content will appear in the beginning
+    of the headline, right AFTER the content
+    that was added directly in the HTML
+    */
+    content: ' I am the AFTER pseudo element';
+}
+
+/* Example pseudo element without content */
+/* Vet shop */
+.vet-shop-headline::before {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /* you could also add a border to a pseudo element */
+    /* border: 1px solid hotpink; */
+    background-image: url(images/dog-tags-military.svg);
+    background-size: contain;
+    margin-right: 1.6rem;
+    /* We need to add this property, otherwise the pseudo element will not be displayed */
+    content: '';
+}
+
+/* Restaurant */
+.restaurant-headline {
+    text-align: center;
+}
+
+.restaurant-headline::before {
+    display: block;
+    height: 40px;
+    /* you could also add a border to a pseudo element */
+    /* border: 1px solid hotpink; */
+    background-image: url(images/ketchup.svg);
+    background-size: contain;
+    margin-right: 1.6rem;
+    margin-bottom: 3.2rem;
+    /* We need to add this property, otherwise the pseudo element will not be displayed */
+    content: '';
+}
+
+.restaurant-headline::after {
+    /* 
+        By default pseudo elements are inline elements, 
+        so we need to set them to block if we want to add 
+        width and height
+    */
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: crimson;
+    margin: 3.2rem auto;
+    /* We need to add this property, otherwise the pseudo element will not be displayed */
+    content: '';
+}

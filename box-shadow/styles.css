@@ -1,0 +1,42 @@
+:root {
+    font-size: 62.5%; /* 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mistyrose;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Base class for card */
+.card {
+    background-color: white;
+    border: 1px solid #c5c2c2;
+    border-radius: 5px;
+    padding: 2rem; /* 10px */
+}
+
+/* Variation stack */
+.card-var-stack {
+    width: 200px;
+    box-shadow: 10px 8px 0 0px #626060, 19px 18px 0 0px black;
+    margin: 3rem auto; 
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+/* Variation shadow */
+.card-var-shadow {
+    width: 300px;
+    border: 1px solid #dfdfdf;
+    box-shadow: 11px 8px 20px rgb(0 0 0 / 26%);
+    margin: 3rem auto;
+}
